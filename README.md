@@ -6,6 +6,18 @@ This repository contains the code for the Animated Card Component, a small proje
 
 The Animated Card Component is a small interactive component that consists of a front and a back side. When the user clicks on the card, it smoothly flips from the front side to the back side, and vice versa. The front side displays basic information, such as a title, a short description, and a button to view more details. The back side displays additional details about the card.
 
+
+## Sample
+
+You can use any sample data for card.
+
+Here is a sample of what card should look like.
+
+https://github.com/mohamadkhakie/animated-card/assets/96692852/c07a3eb0-2887-46c7-bfab-6cff199ba69a
+
+
+
+
 ## Technologies Used
 
 - React: A JavaScript library for building user interfaces.
@@ -34,7 +46,7 @@ To run the Animated Card Component project locally, follow these steps:
     npm install
     ```
 
-Or
+   Or
 
     ```bash
     yarn install
@@ -44,10 +56,13 @@ Or
 
     ```bash
     npm run dev
+    ```
 
-Or
+   Or
+   
     ```bash
     yarn run dev
+    ```
 
 5. Open your browser and visit http://localhost:3000 to see the project in action.
 
