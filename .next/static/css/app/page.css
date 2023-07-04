@@ -259,7 +259,9 @@
     /* height: ; */
     background-color: #fff;
     border-radius: 10px;
+    
 }
+
 .Card_card-image__P4UHe {
     height: 180px;
     width: 347px;
@@ -282,6 +284,7 @@
 .Card_card-size__9ltq2{
     width: 348px;
     height: 400px;
+    z-index: 9999;
 }
 .Card_titles___Utae{
     display: flex;

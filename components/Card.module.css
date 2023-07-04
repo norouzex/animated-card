@@ -5,7 +5,9 @@
     /* height: ; */
     background-color: #fff;
     border-radius: 10px;
+    
 }
+
 .card-image {
     height: 180px;
     width: 347px;
@@ -28,6 +30,7 @@
 .card-size{
     width: 348px;
     height: 400px;
+    z-index: 9999;
 }
 .titles{
     display: flex;

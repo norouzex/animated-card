@@ -1,5 +1,5 @@
 "use client";
-
+import gsap from "gsap";
 import { useRef, useEffect } from "react";
 import { Power2, TweenMax } from "gsap";
 import style from "./Card.module.css";
@@ -81,42 +81,29 @@ const Card = () => {
         borderRadius: "10px",
       },
     });
-    first.classList.add(style["card-size"]);
+
+    gsap.set(second, { rotationY: -180 });
     function mouseenter() {
-      TweenMax.to(container, 0.5, {
-        css: { rotationY: "+=180" },
-        onComplete: activeUi,
-        ease: Power2.easeInOut,
-      });
-      TweenMax.to(container, 1, {
-        css: { z: "-=100" },
-        yoyo: true,
-        repeat: 1,
-        ease: Power2.easeIn,
-      });
-      container.removeEventListener("mouseenter", mouseenter);
+      console.log("wwwwwwwww");
+      action.play();
     }
     function mouseleave() {
-      TweenMax.to(container, 0.5, {
-        css: { rotationY: "+=180" },
-        onComplete: activeUi,
-        ease: Power2.easeInOut,
-      });
-      TweenMax.to(container, 1, {
-        css: { z: "-=100" },
-        yoyo: true,
-        repeat: 1,
-        ease: Power2.easeIn,
-      });
-      container.removeEventListener("mouseleave", mouseleave);
+      action.reverse();
     }
 
     function activeUi() {
-      container.addEventListener("mouseenter", mouseenter, { once: true });
-      container.addEventListener("mouseleave", mouseleave, { once: true });
+      container.addEventListener("mouseenter", mouseenter);
+      container.addEventListener("mouseleave", mouseleave);
     }
 
     activeUi();
+
+    const action = gsap
+      .timeline({ paused: true })
+      .to(first, { duration: 1, rotationY: 180 })
+      .to(second, { duration: 1, rotationY: 0 }, 0)
+      .to(container, { z: 50 }, 0)
+      .to(container, { z: 0 }, 0.5);
 
     return () => {
       container.removeEventListener("mouseenter", mouseenter);
@@ -132,18 +119,17 @@ const Card = () => {
         transformStyle: "preserve-3d",
         perspective: 800,
         perspectiveOrigin: "50% 50% 0px",
-        backgroundColor: "#000000",
         marginLeft: "auto",
         marginRight: "auto",
       }}
     >
       <div className={`${style.card} first`}>
-        <CardImage src={"./iphone.jpg"} />
-        <CardContent title="Main title" />
+        <CardImage />
+        <CardContent title="Card Flip" />
       </div>
 
       <div className={`${style.card} second`}>
-        <FlipCardContent title="flip title" />
+        <FlipCardContent title="fCard Flip" />
       </div>
     </div>
   );

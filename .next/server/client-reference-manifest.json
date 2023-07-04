@@ -259,11 +259,11 @@
   },
   "edgeSSRModuleMapping": {},
   "cssFiles": {
-    "D:\\projects\\front\\2\\animated-card\\app\\layout": [
-      "static/css/app/layout.css"
-    ],
     "D:\\projects\\front\\2\\animated-card\\app\\page": [
       "static/css/app/page.css"
+    ],
+    "D:\\projects\\front\\2\\animated-card\\app\\layout": [
+      "static/css/app/layout.css"
     ]
   },
   "clientModules": {
@@ -939,20 +939,6 @@
       ],
       "async": false
     },
-    "D:\\projects\\front\\2\\animated-card\\app\\globals.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/layout.css"
-      ]
-    },
-    "D:\\projects\\front\\2\\animated-card\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/layout.css"
-      ]
-    },
     "D:\\projects\\front\\2\\animated-card\\app\\page.module.css#": {
       "id": "null",
       "name": "default",
@@ -997,6 +983,20 @@
         "app/page:static/chunks/app/page.js"
       ],
       "async": false
+    },
+    "D:\\projects\\front\\2\\animated-card\\app\\globals.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/layout.css"
+      ]
+    },
+    "D:\\projects\\front\\2\\animated-card\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/layout.css"
+      ]
     }
   }
 }
