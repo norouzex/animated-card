@@ -83,7 +83,6 @@ const Card = () => {
 
     gsap.set(second, { rotationY: -180 });
     function mouseenter() {
-      console.log("wwwwwwwww");
       action.play();
     }
     function mouseleave() {
@@ -99,10 +98,10 @@ const Card = () => {
 
     const action = gsap
       .timeline({ paused: true })
-      .to(first, { duration: 1, rotationY: 180 })
-      .to(second, { duration: 1, rotationY: 0 }, 0)
+      .to(first, { duration: 0.5, rotationY: 180 })
+      .to(second, { duration: 0.5, rotationY: 0 }, 0)
       .to(container, { z: 50 }, 0)
-      .to(container, { z: 0 }, 0.5);
+      .to(container, { z: 0 }, 0);
 
     return () => {
       container.removeEventListener("mouseenter", mouseenter);
