@@ -230,9 +230,9 @@
         "async": false
       }
     },
-    "(app-client)/./node_modules/next/dist/client/image.js": {
+    "(app-client)/./components/Card.js": {
       "*": {
-        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "id": "(sc_client)/./components/Card.js",
         "name": "*",
         "chunks": [
           "app/page:static/chunks/app/page.js"
@@ -240,7 +240,7 @@
         "async": false
       },
       "": {
-        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "id": "(sc_client)/./components/Card.js",
         "name": "",
         "chunks": [
           "app/page:static/chunks/app/page.js"
@@ -248,42 +248,8 @@
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "id": "(sc_client)/./components/Card.js",
         "name": "default",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./node_modules/next/dist/shared/lib/head.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
-        "name": "*",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
-        "name": "",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
-        "name": "default",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      },
-      "defaultHead": {
-        "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
-        "name": "defaultHead",
         "chunks": [
           "app/page:static/chunks/app/page.js"
         ],
@@ -293,11 +259,11 @@
   },
   "edgeSSRModuleMapping": {},
   "cssFiles": {
-    "D:\\projects\\front\\2\\animated-card\\app\\page": [
-      "static/css/app/page.css"
-    ],
     "D:\\projects\\front\\2\\animated-card\\app\\layout": [
       "static/css/app/layout.css"
+    ],
+    "D:\\projects\\front\\2\\animated-card\\app\\page": [
+      "static/css/app/page.css"
     ]
   },
   "clientModules": {
@@ -973,125 +939,6 @@
       ],
       "async": false
     },
-    "D:\\projects\\front\\2\\animated-card\\app\\page.module.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/page.css"
-      ]
-    },
-    "D:\\projects\\front\\2\\animated-card\\node_modules\\next\\dist\\client\\image.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "D:\\projects\\front\\2\\animated-card\\node_modules\\next\\dist\\esm\\client\\image.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "D:\\projects\\front\\2\\animated-card\\node_modules\\next\\dist\\client\\image.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "D:\\projects\\front\\2\\animated-card\\node_modules\\next\\dist\\esm\\client\\image.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "D:\\projects\\front\\2\\animated-card\\node_modules\\next\\dist\\client\\image.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "default",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "D:\\projects\\front\\2\\animated-card\\node_modules\\next\\dist\\esm\\client\\image.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "default",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "D:\\projects\\front\\2\\animated-card\\node_modules\\next\\dist\\shared\\lib\\head.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "D:\\projects\\front\\2\\animated-card\\node_modules\\next\\dist\\esm\\shared\\lib\\head.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "D:\\projects\\front\\2\\animated-card\\node_modules\\next\\dist\\shared\\lib\\head.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "D:\\projects\\front\\2\\animated-card\\node_modules\\next\\dist\\esm\\shared\\lib\\head.js#": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "D:\\projects\\front\\2\\animated-card\\node_modules\\next\\dist\\shared\\lib\\head.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "default",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "D:\\projects\\front\\2\\animated-card\\node_modules\\next\\dist\\esm\\shared\\lib\\head.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "default",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "D:\\projects\\front\\2\\animated-card\\node_modules\\next\\dist\\shared\\lib\\head.js#defaultHead": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "defaultHead",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "D:\\projects\\front\\2\\animated-card\\node_modules\\next\\dist\\esm\\shared\\lib\\head.js#defaultHead": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "defaultHead",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
     "D:\\projects\\front\\2\\animated-card\\app\\globals.css#": {
       "id": "null",
       "name": "default",
@@ -1105,6 +952,51 @@
       "chunks": [
         "static/css/app/layout.css"
       ]
+    },
+    "D:\\projects\\front\\2\\animated-card\\app\\page.module.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/page.css"
+      ]
+    },
+    "D:\\projects\\front\\2\\animated-card\\components\\Card.module.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/page.css"
+      ]
+    },
+    "D:\\projects\\front\\2\\animated-card\\components\\UI\\Button.module.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/page.css"
+      ]
+    },
+    "D:\\projects\\front\\2\\animated-card\\components\\Card.js": {
+      "id": "(app-client)/./components/Card.js",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\projects\\front\\2\\animated-card\\components\\Card.js#": {
+      "id": "(app-client)/./components/Card.js",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\projects\\front\\2\\animated-card\\components\\Card.js#default": {
+      "id": "(app-client)/./components/Card.js",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
     }
   }
 }
