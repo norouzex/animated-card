@@ -5,7 +5,7 @@ import { Power2, TweenMax } from "gsap";
 import style from "./Card.module.css";
 import Button from "./UI/Button";
 
-const CardImage = (props) => {
+const CardImage = () => {
   return <div className={style["card-image"]}></div>;
 };
 
@@ -57,7 +57,6 @@ const Card = () => {
     const container = containerRef.current;
     const first = container.querySelector(".first");
     const second = container.querySelector(".second");
-    const isTouch = "ontouchstart" in window;
 
     TweenMax.set(container, {
       css: {
@@ -129,7 +128,7 @@ const Card = () => {
       </div>
 
       <div className={`${style.card} second`}>
-        <FlipCardContent title="fCard Flip" />
+        <FlipCardContent title="Card Flip" />
       </div>
     </div>
   );
