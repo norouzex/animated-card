@@ -230,6 +230,32 @@
         "async": false
       }
     },
+    "(app-client)/./components/Card.js": {
+      "*": {
+        "id": "(sc_client)/./components/Card.js",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/Card.js",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/Card.js",
+        "name": "default",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./node_modules/next/dist/client/image.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
@@ -979,6 +1005,44 @@
       "chunks": [
         "static/css/app/page.css"
       ]
+    },
+    "D:\\projects\\front\\animated-card\\components\\Card.module.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/page.css"
+      ]
+    },
+    "D:\\projects\\front\\animated-card\\components\\UI\\Button.module.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/page.css"
+      ]
+    },
+    "D:\\projects\\front\\animated-card\\components\\Card.js": {
+      "id": "(app-client)/./components/Card.js",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\projects\\front\\animated-card\\components\\Card.js#": {
+      "id": "(app-client)/./components/Card.js",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "D:\\projects\\front\\animated-card\\components\\Card.js#default": {
+      "id": "(app-client)/./components/Card.js",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
     },
     "D:\\projects\\front\\animated-card\\node_modules\\next\\dist\\client\\image.js": {
       "id": "(app-client)/./node_modules/next/dist/client/image.js",

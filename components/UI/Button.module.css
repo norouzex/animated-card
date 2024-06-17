@@ -1,0 +1,14 @@
+.button{
+    
+    color: white;
+    background-color: blueviolet;
+    height: 2.5rem;
+    width: 10rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    padding: 1rem;
+}
