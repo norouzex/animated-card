@@ -1,17 +1,12 @@
 "use client";
-
+import gsap from "gsap";
 import { useRef, useEffect } from "react";
 import { Power2, TweenMax } from "gsap";
 import style from "./Card.module.css";
 import Button from "./UI/Button";
 
-const CardImage = (props) => {
-  return (
-    <div
-      // style={{ backgroundImage: `url(${props.src})` }}
-      className={style["card-image"]}
-    ></div>
-  );
+const CardImage = () => {
+  return <div className={style["card-image"]}></div>;
 };
 
 const CardContent = (props) => {
@@ -22,7 +17,7 @@ const CardContent = (props) => {
         Some quick example text to build on the card title and make up the bulk
         of the card's content in the flipped state.
       </p>
-      <Button text="Go somewhere else" className={style.button} />
+      <Button text="Go somewhere" className={style.button} />
     </div>
   );
 };
@@ -55,15 +50,13 @@ const FlipCardContent = (props) => {
     </>
   );
 };
-
 const Card = () => {
   const containerRef = useRef(null);
 
   useEffect(() => {
     const container = containerRef.current;
-    const hearts = container.querySelector(".first");
-    const spades = container.querySelector(".second");
-    const isTouch = "ontouchstart" in window;
+    const first = container.querySelector(".first");
+    const second = container.querySelector(".second");
 
     TweenMax.set(container, {
       css: {
@@ -72,13 +65,13 @@ const Card = () => {
       },
     });
 
-    TweenMax.set(spades, {
+    TweenMax.set(second, {
       css: {
         rotationY: -180,
       },
     });
 
-    TweenMax.set([hearts, spades], {
+    TweenMax.set([first, second], {
       css: {
         backfaceVisibility: "hidden",
         position: "absolute",
@@ -87,34 +80,32 @@ const Card = () => {
         borderRadius: "10px",
       },
     });
-    hearts.classList.add(style["card-size"]);
-    function onMouseDown() {
-      TweenMax.to(container, 2, {
-        css: { rotationY: "+=180" },
-        onComplete: enableUI,
-        ease: Power2.easeInOut,
-      });
-      TweenMax.to(container, 1, {
-        css: { z: "-=100" },
-        yoyo: true,
-        repeat: 1,
-        ease: Power2.easeIn,
-      });
+
+    gsap.set(second, { rotationY: -180 });
+    function mouseenter() {
+      action.play();
+    }
+    function mouseleave() {
+      action.reverse();
     }
 
-    function enableUI() {
-      if (isTouch) {
-        container.addEventListener("touchend", onMouseDown, { once: true });
-      } else {
-        container.addEventListener("click", onMouseDown, { once: true });
-      }
+    function activeUi() {
+      container.addEventListener("mouseenter", mouseenter);
+      container.addEventListener("mouseleave", mouseleave);
     }
 
-    enableUI();
+    activeUi();
+
+    const action = gsap
+      .timeline({ paused: true })
+      .to(first, { duration: 0.5, rotationY: 180 })
+      .to(second, { duration: 0.5, rotationY: 0 }, 0)
+      .to(container, { z: 50 }, 0)
+      .to(container, { z: 0 }, 0);
 
     return () => {
-      container.removeEventListener("touchend", onMouseDown);
-      container.removeEventListener("click", onMouseDown);
+      container.removeEventListener("mouseenter", mouseenter);
+      container.removeEventListener("mouseleave", mouseleave);
     };
   }, []);
 
@@ -126,18 +117,17 @@ const Card = () => {
         transformStyle: "preserve-3d",
         perspective: 800,
         perspectiveOrigin: "50% 50% 0px",
-        backgroundColor: "#000000",
         marginLeft: "auto",
         marginRight: "auto",
       }}
     >
       <div className={`${style.card} first`}>
-        <CardImage src={"./iphone.jpg"} />
-        <CardContent title="Main title" />
+        <CardImage />
+        <CardContent title="Card Flip" />
       </div>
 
       <div className={`${style.card} second`}>
-        <FlipCardContent title="flip title" />
+        <FlipCardContent title="Card Flip" />
       </div>
     </div>
   );

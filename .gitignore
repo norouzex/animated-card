@@ -1,17 +1,18 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
+.next
 /node_modules
 /.pnp
 .pnp.js
-
+/.next
+/.next
 # testing
 /coverage
+package-lock.json
 
 # production
 /build
-/.next
-.next
 
 # misc
 .DS_Store
